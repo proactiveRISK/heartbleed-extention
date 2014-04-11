@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/global.css" ?>
+<?xml-stylesheet type="text/css" href="chrome://heartbleed/skin/heartbleed.css" ?>
+
+<!DOCTYPE overlay SYSTEM "chrome://heartbleed/locale/heartbleed.dtd">
+
+<overlay id="heartbleed-overlay" xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://heartbleed/content/heartbleed.js" />
+
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="heartbleed-string-bundle"
+			src="chrome://heartbleed/locale/heartbleed.properties" />
+	</stringbundleset>
+
+	<commandset>
+		<command id="heartbleed-cmd-show-popup" oncommand="HeartbleedChecker.showPopup();" />
+		<command id="heartbleed-cmd-enable" oncommand="HeartbleedChecker.enable();" />
+	</commandset>
+
+	<toolbarpalette id="BrowserToolbarPalette">
+		<toolbarbutton id="heartbleed-button" class="green"
+			label="&heartbleed-button.label;" tooltiptext="&heartbleed-button.tooltip;"
+			command="heartbleed-cmd-show-popup">
+		</toolbarbutton>
+	</toolbarpalette>
+	<popupset id="mainPopupSet">
+		<panel id="heartbleed-panel">
+			<vbox>
+				<checkbox id="chkEnabled" label="Heartbleed Checker Enabled" checked="true" command="heartbleed-cmd-enable"/>
+				<html:p class="social">
+					This tool was provided by <html:a href="http://www.proactiverisk.com" target="_blank">proactiveRISK</html:a>
+					to check for CVE-2014-0160 (<html:a href="http://heartbleed.com/" target="_blank">Heartbleed OpenSSL flaw</html:a>)
+				</html:p>
+			</vbox>
+		</panel>
+	</popupset>
+</overlay>

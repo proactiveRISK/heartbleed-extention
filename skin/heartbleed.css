@@ -1,0 +1,57 @@
+#heartbleed-button {
+  list-style-image: url("chrome://heartbleed/skin/heartbleed_24.png");
+}
+
+#heartbleed-button.green {
+  list-style-image: url("chrome://heartbleed/skin/heartbleed_24_green.png");
+}
+
+#heartbleed-button.yellow {
+  list-style-image: url("chrome://heartbleed/skin/heartbleed_24_yellow.png");
+}
+
+#heartbleed-button[disabled=true] {
+  list-style-image: url("chrome://heartbleed/skin/heartbleed_24_disabled.png");
+}
+
+toolbar[iconsize="small"] #heartbleed-button {
+  list-style-image: url("chrome://heartbleed/skin/heartbleed_16.png");
+}
+
+toolbar[iconsize="small"] #heartbleed-button.green {
+  list-style-image: url("chrome://heartbleed/skin/heartbleed_16_green.png");
+}
+
+toolbar[iconsize="small"] #heartbleed-button.yellow {
+  list-style-image: url("chrome://heartbleed/skin/heartbleed_16_yellow.png");
+}
+
+toolbar[iconsize="small"] #heartbleed-button[disabled=true] {
+  list-style-image: url("chrome://heartbleed/skin/heartbleed_16_disabled.png");
+}
+
+#heartbleed-panel {
+	font: 'Avenir Next', 'Helvetica Neue', sans-serif;
+	font-size: medium;
+	background: #fff;
+	padding: 5px;
+	width: 325px;
+}
+
+p {
+	padding: 0;
+	margin: 5px;
+}
+
+a {
+	color: #b90000;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.social {
+	font-size: 12px;
+}

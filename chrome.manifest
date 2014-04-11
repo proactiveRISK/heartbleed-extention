@@ -1,0 +1,6 @@
+content   heartbleed  content/ contentaccessible=yes
+skin      heartbleed  classic/1.0 skin/
+locale    heartbleed  en-US locale/en-US/
+resource  heartbleed  modules/
+style     chrome://global/content/customizeToolbar.xul chrome://heartbleed/skin/heartbleed.css
+overlay   chrome://browser/content/browser.xul chrome://heartbleed/content/heartbleed.xul
