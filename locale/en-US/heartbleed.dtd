@@ -1,4 +1,4 @@
-<!ENTITY heartbleed-button.label      "Heartbleed Checker">
+<!ENTITY heartbleed-button.label      "Heartbleed-Ext">
 <!ENTITY heartbleed-button.tooltip    "Checks the current server for the Heartbleed bug">
 
 

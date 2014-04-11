@@ -4,7 +4,7 @@
   xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:name>Heartbleed Checker</em:name>
+    <em:name>Heartbleed-Ext</em:name>
     <em:description>Checks websites for Heartbleed bug</em:description>
     <em:creator>Proactive Risk</em:creator>
     <em:developer>Ray Engelking</em:developer>
@@ -13,8 +13,8 @@
     <em:version>1.0</em:version>
     <em:homepageURL>http://www.proactiverisk.com</em:homepageURL>
     <em:type>2</em:type>
-	<em:iconURL>chrome://downloader/skin/heartbleed_48.png</em:iconURL>
-	<em:icon64URL>chrome://downloader/skin/heartbleed_64.png</em:icon64URL>
+	<em:iconURL>chrome://heartbleed/skin/heartbleed_48.png</em:iconURL>
+	<em:icon64URL>chrome://heartbleed/skin/heartbleed_64.png</em:icon64URL>
 	<!-- em:updateURL>https://www.proactiverisk.com/downloads/update.rdf</em:updateURL -->
 	
     <!-- Mozilla Firefox -->
