@@ -169,8 +169,8 @@ var HeartbleedChecker={
 				case -1:
 					//request failed, so unknown whether this site is vulnerable
 					console.log("request failed:"+message);
-					label=HeartbleedChecker.bundle.getString("heartbleed.warning.label")+" "+message;
-					nb.appendNotification(label,"heartbleed.notification","chrome://heartbleed/skin/heartbleed_32_yellow.png",nb.PRIORITY_WARNING_LOW);
+//					label=HeartbleedChecker.bundle.getString("heartbleed.warning.label")+" "+message;
+//					nb.appendNotification(label,"heartbleed.notification","chrome://heartbleed/skin/heartbleed_32_yellow.png",nb.PRIORITY_WARNING_LOW);
 					HeartbleedChecker.heartbleedButton.setAttribute("class","yellow");
 					break;
 				case 0:
@@ -184,8 +184,8 @@ var HeartbleedChecker={
 					//check result for error
 					console.log("site result:"+result);
 				    if(message) {
-						label=HeartbleedChecker.bundle.getString("heartbleed.caution.label")+" "+message;
-						nb.appendNotification(label,"heartbleed.notification","chrome://heartbleed/skin/heartbleed_32_yellow.png",nb.PRIORITY_WARNING_LOW);
+//						label=HeartbleedChecker.bundle.getString("heartbleed.caution.label")+" "+message;
+//						nb.appendNotification(label,"heartbleed.notification","chrome://heartbleed/skin/heartbleed_32_yellow.png",nb.PRIORITY_WARNING_LOW);
 						HeartbleedChecker.heartbleedButton.setAttribute("class","yellow");
 				    } else {
 				    	HeartbleedChecker.heartbleedButton.setAttribute("class","green");

@@ -33,6 +33,9 @@
 					This tool was provided by <html:a href="http://www.proactiverisk.com" target="_blank">proactiveRISK</html:a>
 					to check for CVE-2014-0160 (<html:a href="http://heartbleed.com/" target="_blank">Heartbleed OpenSSL flaw</html:a>)
 				</html:p>
+				<html:p class="social">
+					FAQ <html:a href="http://filippo.io/Heartbleed/faq.html" target="_blank">click here</html:a>
+				</html:p>
 			</vbox>
 		</panel>
 	</popupset>
